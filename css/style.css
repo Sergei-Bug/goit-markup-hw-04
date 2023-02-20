@@ -224,7 +224,6 @@ ul {
 
 .hero {
   max-width: 1440px;
-  height: 600px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -232,6 +231,8 @@ ul {
     url(../images/people-office.jpg);
   margin: 0 auto;
   background-color: var(--dark);
+  background-position: center;
+  background-size: cover;
 }
 
 .container-hero {
@@ -423,7 +424,8 @@ ul {
   background-color: var(--color-primary);
 }
 
-.link-network:hover {
+.link-network:hover,
+.link-network:focus {
   background-color: var(--color-secondary);
 }
 
@@ -461,6 +463,7 @@ ul {
   display: flex;
   width: 168px;
   height: 88px;
+  padding: 16px 32px;
   color: var(--color-subtitle-text);
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -474,7 +477,8 @@ ul {
 
 .item-customers {
   display: block;
-  padding: 16px 32px;
+  width: 104px;
+  height: 56px;
   fill: currentColor;
 }
 
@@ -540,12 +544,6 @@ ul {
   margin-bottom: 0px;
 }
 
-.card-portfolio:hover,
-.card-portfolio:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .card-content {
   padding: 32px 16px;
   border-left: 1px solid var(--accent);
@@ -559,11 +557,18 @@ ul {
   height: auto;
 }
 
-.link-filter {
+.link-card-portfolio {
+  display: block;
   text-decoration: none;
 }
 
-.title-link-filter {
+.link-card-portfolio:hover,
+.link-filcard-portfolioter:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.title-link-card {
   font-size: 20px;
   font-weight: 500;
   color: var(--dark);
@@ -572,7 +577,7 @@ ul {
   margin-bottom: 8px;
 }
 
-.text-link-filter {
+.text-link-card {
   color: var(--color-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
