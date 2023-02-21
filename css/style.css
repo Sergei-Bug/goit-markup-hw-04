@@ -461,9 +461,10 @@ ul {
 
 .link-customers {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 168px;
   height: 88px;
-  padding: 16px 32px;
   color: var(--color-subtitle-text);
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -563,7 +564,7 @@ ul {
 }
 
 .link-card-portfolio:hover,
-.link-filcard-portfolioter:focus {
+.link-card-portfolio:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
